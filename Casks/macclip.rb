@@ -4,7 +4,7 @@ cask "macclip" do
 
   url "https://github.com/mehedihsiam/macclip/releases/download/v#{version}/MacClip.dmg"
   name "MacClip"
-  desc "Clipboard history for macOS"
+  desc "Clipboard history manager that pastes with Option+V"
   homepage "https://mehedihsiam.github.io/macclip/"
 
   livecheck do
@@ -12,7 +12,7 @@ cask "macclip" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "MacClip.app"
 
