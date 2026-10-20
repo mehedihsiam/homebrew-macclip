@@ -18,10 +18,10 @@ cask "macclip" do
 
   # MacClip is not notarized by Apple, so remove the download quarantine flag
   # to avoid the "could not verify" prompt.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/MacClip.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-dr", "com.apple.quarantine", "{{appdir}}/MacClip.app"],
+        must_succeed: false
   end
 
   uninstall quit: "com.macclip.app"
