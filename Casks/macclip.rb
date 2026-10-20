@@ -1,6 +1,6 @@
 cask "macclip" do
-  version "0.1.1"
-  sha256 "16dacf4b41dacc011f1fb42ebd39caf93852063bbb3d7914d9a9254ecd7239be"
+  version "0.1.2"
+  sha256 "693f663ae2e79f2e1c59889b31ffb78f4f2b23b559411f0914cb8d56a052c63b"
 
   url "https://github.com/mehedihsiam/macclip/releases/download/v#{version}/MacClip.dmg"
   name "MacClip"
